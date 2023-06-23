@@ -1,0 +1,14 @@
+<h2 style="font-size: 24px; font-weight: bold">All Stocks</h2>
+<div style="display: flex; flex-direction: column">
+  <div
+    *ngFor="let stock of stocks"
+    style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px"
+  >
+    <h3 style="font-size: 18px; margin: 0">
+      <a style="text-decoration: none; color: #333" href="#">{{
+        stock.name
+      }}</a>
+    </h3>
+    <p style="font-size: 16px; margin: 5px 0 0 0">Price: {{ stock.price }}</p>
+  </div>
+</div>
